@@ -1,17 +1,14 @@
+const webpack = require('webpack');
+
 module.exports = {
     entry: './src/index.js',
     module: {
-        rules:[
-
-            /**
-             * Used for compiling React files into vanilla JS.
-             */
+        rules: [
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader']
             },
-
             /**
              * Used for importing images into React files.
              */
@@ -24,7 +21,7 @@ module.exports = {
                     }
                 ]
             },
-
+    
             /**
              * Used for importing & compiling SASS.
              */
@@ -41,8 +38,5 @@ module.exports = {
         path: __dirname + '/dist',
         publicPath: '/',
         filename: 'bundle.js'
-    },
-    devServer: {
-        contentBase: './dist'
     }
-}
+};
