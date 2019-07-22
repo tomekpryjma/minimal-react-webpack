@@ -36,7 +36,11 @@ module.exports = {
     },
     output: {
         path: __dirname + '/dist',
+<<<<<<< HEAD
         publicPath: '',
+=======
+        publicPath: '/',
+>>>>>>> 9361617aaa1bae65e08c564482d7b8dbb88ae426
         filename: 'bundle.js'
     }
 };
