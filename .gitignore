@@ -3,5 +3,8 @@ dist/*
 
 *.lock
 
+.env
+.env.development
+
 # Include these
 !dist/index.html
